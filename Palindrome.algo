@@ -1,0 +1,14 @@
+FUNCTION palindrome(mot:srting)
+
+VAR i:INTEGER:=0 , j:INTEGER:=mot.length-1 ;
+
+BEGIN
+WHILE (i<j) DO
+    IF(mot[i]=! mot[j]) THEN
+    RETURN mot ;
+    END_IF
+    i:=i+1;
+    j:=j-1;
+END_WHILE
+RETURN mot;
+END
